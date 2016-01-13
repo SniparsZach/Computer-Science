@@ -1,0 +1,22 @@
+            #navbar {
+    background-color: #008AB8;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 2px;
+}
+            #navbar li {
+    display:inline-block;
+    padding: 2px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+            #navbar a {
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+            p {
+    font-size: 14px;
+    padding: 6px;
+    color: white;
+    }
