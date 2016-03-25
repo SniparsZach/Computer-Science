@@ -1,5 +1,5 @@
             #navbar {
-    background-color: #008AB8;
+    background-color: #919191;
     color:white;
     clear:both;
     text-align:center;
@@ -22,12 +22,17 @@
     }
     
             html { 
-    background: url(http://images4.alphacoders.com/131/131538.jpg) no-repeat center center fixed; 
+    background: url(http://images7.alphacoders.com/587/587593.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+            p {
+    font-size: 14px;
+    padding: 6px;
+    color: white;
+    }
             h1 {
     color: white;
     font-family: "Arial Black", Gadget, sans-serif;
@@ -42,4 +47,33 @@
     color: white;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 23px;
+    }
+            ul {
+    color: white;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    }
+            #padding-text {
+    padding: 6px;
+    }
+            #welcome-section {
+    background: #919191;
+    width: 600px;
+    padding: 6px;
+    margin: auto;
+    }
+            #info1 p {
+    font-size: 14px;
+    padding: 6px;
+    color: white;
+    }
+            #info1 p {
+    font-size: 14px;
+    padding: 6px;
+    color: white;
+    }
+            #text {
+    font-size: 20px;
+    padding: 6px;
+    color: white;
     }
