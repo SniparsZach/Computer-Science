@@ -17,7 +17,7 @@
 }
             p {
     font-size: 14px;
-    padding: 6px;
+    padding: 10px;
     color: white;
     }
     
@@ -30,7 +30,7 @@
 }
             p {
     font-size: 14px;
-    padding: 6px;
+    padding: 10px;
     color: white;
     }
             h1 {
@@ -54,26 +54,26 @@
     font-size: 18px;
     }
             #padding-text {
-    padding: 6px;
+    padding: 10px;
     }
             #welcome-section {
     background: #919191;
     width: 600px;
-    padding: 6px;
+    padding: 10px;
     margin: auto;
     }
             #info1 p {
     font-size: 14px;
-    padding: 6px;
+    padding: 10px;
     color: white;
     }
             #info1 p {
     font-size: 14px;
-    padding: 6px;
+    padding: 10px;
     color: white;
     }
             #text {
     font-size: 20px;
-    padding: 6px;
+    padding: 10px;
     color: white;
     }
