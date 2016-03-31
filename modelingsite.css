@@ -1,5 +1,5 @@
             #navbar {
-                background-color: #281e5b;
+                background-color: #6e6e6e;
                 color: white;
                 clear: both;
                 text-align: center;
@@ -19,7 +19,7 @@
             }
             
             html {
-                background: url(https://i.ytimg.com/vi/ND07m8wBltQ/maxresdefault.jpg) no-repeat center center fixed;
+                background: url(http://drwallpaper.com/wp-content/uploads/2016/02/world_of_warships_wallpaper_hd_background_download_desktop.jpg) no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -57,16 +57,16 @@
             }
             
             #right {
-                background: #281e5b;
-                width: 600px;
+                background: #6e6e6e;
+                width: 647.5px;
                 float: right;
                 margin-right: 20px;
                 padding-top: 10px;
             }
             
             #left {
-                background: #281e5b;
-                width: 600px;
+                background: #6e6e6e;
+                width: 647.5px;
                 float: left;
                 margin-left: 20px;
                 padding-top: 10px;
@@ -77,21 +77,15 @@
             }
             
             #welcome-section {
-                background: #281e5b;
+                background: #6e6e6e;
                 width: 500px;
                 padding: 6px;
                 margin: auto;
             }
             
-            #text-custom-1 p {
-                font-size: 25px;
-            }
-            
-            #text {
-                font-family: "Courier New", Courier, monospace;
-            }
-            
-            #bdown {
-                font-weight: bold;
+            p {
+                font-size: 14px;
+                padding: 10px;
                 color: white;
+                font-family: "Comic Sans MS", cursive, sans-serif;
             }

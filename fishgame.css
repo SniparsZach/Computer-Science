@@ -1,45 +1,51 @@
             #navbar {
-    background-color: #008AB8;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding: 2px;
-}
+                background-color: #008AB8;
+                color: white;
+                clear: both;
+                text-align: center;
+                padding: 2px;
+            }
+            
             #navbar li {
-    display:inline-block;
-    padding: 2px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
+                display: inline-block;
+                padding: 2px;
+                padding-right: 20px;
+                padding-left: 30px;
+            }
+            
             #navbar a {
-    color: white;
-    font-family: "Lucida Console", Monaco, monospace;
-}
+                color: white;
+                font-family: "Lucida Console", Monaco, monospace;
+            }
+            
             p {
-    font-size: 14px;
-    padding: 6px;
-    color: white;
-    }
-    
-            html { 
-    background: url(http://images4.alphacoders.com/131/131538.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+                font-size: 14px;
+                padding: 6px;
+                color: white;
+            }
+            
+            html {
+                background: url(http://images4.alphacoders.com/131/131538.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            
             h1 {
-    color: white;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 32px;
-    }
+                color: white;
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 32px;
+            }
+            
             h2 {
-    color: white;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 28px;
-    }
+                color: white;
+                font-family: "Arial Black", Gadget, sans-serif;
+                font-size: 28px;
+            }
+            
             h3 {
-    color: white;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 23px;
-    }
+                color: white;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                font-size: 23px;
+            }
