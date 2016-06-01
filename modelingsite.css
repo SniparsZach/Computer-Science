@@ -35,7 +35,7 @@
             h1 {
                 color: white;
                 font-family: "Arial Black", Gadget, sans-serif;
-                font-size: 32px;
+                font-size: 20px;
             }
             
             h2 {
@@ -56,22 +56,6 @@
                 font-size: 18px;
             }
             
-            #right {
-                background: #6e6e6e;
-                width: 647.5px;
-                float: right;
-                margin-right: 20px;
-                padding-top: 10px;
-            }
-            
-            #left {
-                background: #6e6e6e;
-                width: 647.5px;
-                float: left;
-                margin-left: 20px;
-                padding-top: 10px;
-            }
-            
             #padding-text {
                 padding: 6px;
             }
@@ -88,4 +72,38 @@
                 padding: 10px;
                 color: white;
                 font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+            
+            #centerline {
+                background: #6e6e6e;
+                width: 800px;
+                padding: 8px;
+                margin: auto;
+            }
+            
+            #first_text {
+                text-align: center;
+                position: relative;
+                top: 300px;
+                font-size: 30px;
+            }
+            
+            #nextbutton {
+                position: absolute;
+                left: 60%;
+                top: 93%;
+                font-size: 20px;
+            }
+            
+            #backbutton {
+                position: absolute;
+                left: 35%;
+                top: 93%;
+                font-size: 20px;
+            }
+            
+            #image {
+                top: 50%;
+                height: 300px;
+                margin-bottom: 0.5%;
             }
