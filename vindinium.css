@@ -58,7 +58,7 @@
             
             #explanation {
                 background: #281e5b;
-            width: 800px;
+                width: 800px;
                 margin: auto;
                 padding: 5px;
             }
@@ -102,3 +102,20 @@
                 font-weight: bold;
                 color: white;
             }
+            
+            #centerline {
+                background: #281e5b;
+                width: 1000px;
+                padding: 8px;
+                margin: auto;
+                word-wrap:break-word;
+            }
+            
+            #code {
+                background: #ffffff;
+                width: 800px;
+                padding: 10px;
+                margin: auto;
+                word-wrap:break-word;
+            }
+            
