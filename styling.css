@@ -1,5 +1,5 @@
             #navbar {
-                background-color: #008AB8;
+                background-color: #004B63;
                 color: white;
                 clear: both;
                 text-align: center;
@@ -124,4 +124,11 @@
             
             .hacking {
                 color: red;
+            }
+            
+            #code {
+                background: white;
+                width:550px;
+                padding:10px;
+                margin:auto;
             }
