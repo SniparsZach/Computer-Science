@@ -89,16 +89,10 @@
             }
             
             #nextbutton {
-                position: absolute;
-                left: 60%;
-                top: 93%;
                 font-size: 20px;
             }
             
             #backbutton {
-                position: absolute;
-                left: 35%;
-                top: 93%;
                 font-size: 20px;
             }
             
