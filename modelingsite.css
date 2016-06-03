@@ -1,5 +1,5 @@
             #navbar {
-                background-color: #6e6e6e;
+                background-color: #315f93;
                 color: white;
                 clear: both;
                 text-align: center;
@@ -19,7 +19,7 @@
             }
             
             html {
-                background: url(http://drwallpaper.com/wp-content/uploads/2016/02/world_of_warships_wallpaper_hd_background_download_desktop.jpg) no-repeat center center fixed;
+                background: url(http://www.hdwallpapers.in/walls/world_of_warships_game-HD.jpg) no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -61,7 +61,7 @@
             }
             
             #welcome-section {
-                background: #6e6e6e;
+                background: #315f93;
                 width: 500px;
                 padding: 6px;
                 margin: auto;
@@ -75,7 +75,7 @@
             }
             
             #centerline {
-                background: #6e6e6e;
+                background: #315f93;
                 width: 800px;
                 padding: 8px;
                 margin: auto;
