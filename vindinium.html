@@ -42,7 +42,7 @@
         <center>
             <h2>The Code</h2>
         </center>
-            <p>Here is the code that is a part of the website:</p>
+            <p>Here is the code that makes up my bot:</p>
         <div id="code">
             <pre>
                 <code>
@@ -142,7 +142,177 @@ bot.runGame();
                 </code>
             </pre>
         </div>
-
+            <center>
+                <h2>
+                    What my Bot does!
+                </h2>
+            </center>
+        <p id="codeexplanation">
+            My bot is a simple setup with no advanced commands. The first task my bot to do is to claim the closest mine to it, BUT if there are no mines are running low on health it will one of two things. If there are no other mines available for claiming, then the bot will attack bot closest to it. If the bot has less than 31 health then the bot will go to a tavern and heal up then continue claiming mines or attacking bots.
+        </p>
+<br>
+    <center>
+        <h2>
+        Code Breakdown!
+        </h2>
+    </center>
+    <div id="code">
+        <pre>
+            <code>
+        var enemyBots = [];
+        if(bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if(bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if(bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if(bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+            </code>
+        </pre>
+    </div>
+    <br>
+        <p id="codeexplanation">
+        This string of commands is telling the bot that there are other bots out there too and identifies them. By identifying the other bots in the game, you can set up an attack command string to attack other bots. Later, I will be showing off the part of the script that specifically targets and attacks the bot that is closest to it.
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        var enemyMines = [];
+        if(bot.yourBot.id != 1) enemyMines = enemyMines.concat(bot.bot1mines);
+        if(bot.yourBot.id != 2) enemyMines = enemyMines.concat(bot.bot2mines);
+        if(bot.yourBot.id != 3) enemyMines = enemyMines.concat(bot.bot3mines);
+        if(bot.yourBot.id != 4) enemyMines = enemyMines.concat(bot.bot4mines);
+                </code>
+            </pre>
+        </div>
+        <p id="codeexplanation">
+            This current string tells the bot how many mines each bot in the game has. This information can come in handy as you can use it to attack the player with the most mines but I did not utilize this code string at all but kept it in just in case of any future change.
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        var closestBot = enemyBots[0];
+        for(i = 0; i < enemyBots.length ; i++){
+            if(bot.findDistance(myPos , [closestBot.pos.x , closestBot.pos.y] ) > bot.findDistance(myPos , 
+                                            [enemyBots[i].pos.x , enemyBots[i].pos.y]) ){
+                closestBot = enemyBots[i]
+            }
+        }
+                </code>
+            </pre>
+        </div>
+        <br>
+        <p id="codeexplanation">
+            This part here labels the closest bot to it as an enemy. This is only possible with the help of the otehr piece of code that looks and identifies the other bots in the game.
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        var task;
+                if(bot.yourBot.life <= 31){
+        task = "tavern";
+                    
+                }
+                else if(bot.freeMines <= 0){
+        task = "attack";
+                    
+                }
+                else{
+        task = "freemines";
+                    
+                }
+                </code>
+            </pre>
+        </div>
+        <br>
+        <p id="codeexplanation">
+           This is the thought process of the bot. As seen here, the bot will first:
+        </p>
+        <ul>
+            <ol>Look at the current health of itself.</ol>
+            <ol>If the health of the bot is below 31, then the bot will go to a tavern to heal.</ol>
+            <ol>If the health is above 31 then the bot will look at the current amount of mines that are free for the taking.</ol>
+            <ol>If there are no more mines that it can take then it will attack then nearest player.</ol>
+            <ol>However, if there are free mines available to take then it will go and take them.</ol>
+        </ul>
+        <p id="codeexplanation">
+            After running through this thought process and executing whatever line of code it needs to fit the coded parameters, it will repeat the process again and again.
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        if(task === "tavern") {
+            var closestTavern = bot.taverns[0];
+            for(i = 0; i < bot.taverns.length; i++) {
+                if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+            console.log("Drinking away my life!");
+            myDir = bot.findPath(myPos, closestTavern);
+        }
+                </code>
+            </pre>
+        </div>
+        <br>
+        <p id="codeexplanation">
+            
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+        }
+                </code>
+            </pre>
+        </div>
+        <p id="codeexplanation">
+            
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        if(task === "attack") {
+            console.log("Stabbing my adversary!");
+            myDir = bot.findPath(myPos , [closestBot.pos.x , closestBot.pos.y]);
+        }
+                </code>
+            </pre>
+        </div>
+        <br>
+        <p id="codeexplanation">
+            
+        </p>
+        <br><br><br>
+        <div id="code">
+            <pre>
+                <code>
+        if(myDir === "none") {
+            console.log("Going Random!");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        } else {
+            bot.goDir = myDir;
+        }
+                </code>
+            </pre>
+        </div>
+        <br>
+        <p id="codeexplanation">
+            
+        </p>
     </div>
     <br>
     <br>

@@ -118,3 +118,11 @@
                 margin: auto;
             }
             
+            #codeexplanation {
+                font-family:"Trebuchet MS", Helvetica, sans-serif;
+            }
+            
+            ol {
+                font-size:14px;
+                font-family:"Trebuchet MS", Helvetica, sans-serif;
+            }
