@@ -55,23 +55,7 @@
                 font-family: "Trebuchet MS", Helvetica, sans-serif;
                 font-size: 18px;
             }
-            
-            #right {
-                background: #004B63;
-                width: 600px;
-                float: right;
-                margin-right: 20px;
-                padding-top: 10px;
-            }
-            
-            #left {
-                background: #004B63;
-                width: 600px;
-                float: left;
-                margin-left: 20px;
-                padding-top: 10px;
-            }
-            
+
             #padding-text {
                 padding: 6px;
             }
