@@ -48,20 +48,21 @@
                 <code>
 var Bot = require('bot');
  var PF = require('pathfinding');
-  var bot = new Bot('bkt2ad5a', 'arena', 'http://52.53.211.7:9000'); //Put your bot's code here and change training to Arena when you want to fight others.
+  var bot = new Bot('bkt2ad5a', 'arena', 'http://52.53.211.7:9000')
+              //Put your bot's code here and change training to Arena when you want to fight others.
 var goDir;
 var Promise = require('bluebird');
 Bot.prototype.botBrain = function() {
     return new Promise(function(resolve, reject) {
         _this = bot;
         //////* Write your bot below Here *//////
-        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
+ //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
 
         /*                                      *
          * This Code is global data!            *
          *                                      */
 
-        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
+       // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
         var myDir;
         var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
 
@@ -81,7 +82,8 @@ Bot.prototype.botBrain = function() {
             // Find closest enemy Bot //
         var closestBot = enemyBots[0];
         for(i = 0; i < enemyBots.length ; i++){
-            if(bot.findDistance(myPos , [closestBot.pos.x , closestBot.pos.y] ) > bot.findDistance(myPos , [enemyBots[i].pos.x , enemyBots[i].pos.y]) ){
+            if(bot.findDistance(myPos , [closestBot.pos.x , closestBot.pos.y] ) > bot.findDistance(myPos , 
+                                                                    [enemyBots[i].pos.x , enemyBots[i].pos.y]) ){
                 closestBot = enemyBots[i]
             }
         }
@@ -146,9 +148,10 @@ Bot.prototype.botBrain = function() {
         }
 
 
-        /*                                                                                                                              *
-         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
-         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
+/*                                                                                                      *
+ * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't     *
+ *                                                                          reach, you move randomly.   *
+ * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.    */
         if(myDir === "none") {
             console.log("Going Random!");
             var rand = Math.floor(Math.random() * 4);
