@@ -130,6 +130,8 @@ function gameLoop() {
     window.requestAnimationFrame(gameLoop)
 }
 
+// Collision Script
+// Edit collision script where the height of the collision box is limited to the actual box and not to the bottom of the screenm
 function isColliding(box, fishs){
     console.log(box, fishs);
     var isLeft = fishs.xPos + fishs.width < box.xPos;
